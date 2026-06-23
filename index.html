@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anvil &amp; Oak — Handcrafted Leather &amp; Woodcraft Goods</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg site-nav sticky-top">
+  <div class="container">
+    <a class="brand-mark" href="#home"><span class="dot"></span>Anvil &amp; Oak</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn-leather" href="#register">Create account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<section id="shop" class="page">
+  <header class="shop-hero">
+    <div class="container">
+      <span class="eyebrow">42 pieces</span>
+      <h1 class="mt-2" style="font-size:2.3rem;">The full collection</h1>
+      <p class="hero-lede mt-2">Bags, wallets, belts and woodware — every piece numbered and signed by the maker who finished it.</p>
+    </div>
+  </header>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="row g-5">
+        <aside class="col-lg-3">
+          <div class="filter-block">
+            <h6>Category</h6>
+            <label class="filter-check"><span><input type="checkbox" checked> Bags</span><span class="count">14</span></label>
+            <label class="filter-check"><span><input type="checkbox"> Wallets</span><span class="count">11</span></label>
+            <label class="filter-check"><span><input type="checkbox"> Belts</span><span class="count">8</span></label>
+            <label class="filter-check"><span><input type="checkbox"> Woodware</span><span class="count">9</span></label>
+          </div>
+          <div class="hairline"></div>
+          <div class="filter-block mt-4">
+            <h6>Material</h6>
+            <label class="filter-check"><span><input type="checkbox"> Full-grain leather</span><span class="count">26</span></label>
+            <label class="filter-check"><span><input type="checkbox"> Suede</span><span class="count">7</span></label>
+            <label class="filter-check"><span><input type="checkbox"> Oak</span><span class="count">9</span></label>
+          </div>
+          <div class="hairline"></div>
+          <div class="filter-block mt-4">
+            <h6>Price range</h6>
+            <label class="filter-check"><span><input type="radio" name="price"> Under ₹2,000</span></label>
+            <label class="filter-check"><span><input type="radio" name="price" checked> ₹2,000 – ₹6,000</span></label>
+            <label class="filter-check"><span><input type="radio" name="price"> Above ₹6,000</span></label>
+          </div>
+          <button class="btn-ghost w-100 mt-3">Clear filters</button>
+        </aside>
+
+        <div class="col-lg-9">
+          <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+            <span class="mono-tag" style="color:var(--ink-soft);">Showing 1–9 of 42</span>
+            <select class="sort-select">
+              <option>Sort: Featured</option>
+              <option>Price: Low to high</option>
+              <option>Price: High to low</option>
+              <option>Newest</option>
+            </select>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><span class="badge-new">New</span><img src="https://picsum.photos/seed/p1/600/450" alt="Tan leather tote bag"></div>
+                <div class="body"><span class="cat">Bags</span><h5>Riverbank Tote</h5>
+                  <div class="price-row"><span class="price">₹5,200</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p2/600/450" alt="Brown leather card holder"></div>
+                <div class="body"><span class="cat">Wallets</span><h5>Sparrow Card Holder</h5>
+                  <div class="price-row"><span class="price">₹990</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p3/600/450" alt="Hand-cut leather belt"></div>
+                <div class="body"><span class="cat">Belts</span><h5>Anvil Work Belt</h5>
+                  <div class="price-row"><span class="price">₹1,650</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p4/600/450" alt="Oak serving tray"></div>
+                <div class="body"><span class="cat">Woodware</span><h5>Oak Serving Tray</h5>
+                  <div class="price-row"><span class="price">₹2,400</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><span class="badge-new">New</span><img src="https://picsum.photos/seed/p5/600/450" alt="Crossbody leather bag"></div>
+                <div class="body"><span class="cat">Bags</span><h5>Cartographer Crossbody</h5>
+                  <div class="price-row"><span class="price">₹4,150</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p6/600/450" alt="Leather passport sleeve"></div>
+                <div class="body"><span class="cat">Wallets</span><h5>Voyager Passport Sleeve</h5>
+                  <div class="price-row"><span class="price">₹1,280</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p7/600/450" alt="Woven leather belt"></div>
+                <div class="body"><span class="cat">Belts</span><h5>Stitchline Reversible Belt</h5>
+                  <div class="price-row"><span class="price">₹2,050</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p8/600/450" alt="Oak coaster set"></div>
+                <div class="body"><span class="cat">Woodware</span><h5>Coaster Set, Oak</h5>
+                  <div class="price-row"><span class="price">₹890</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="product-card">
+                <div class="thumb"><img src="https://picsum.photos/seed/p9/600/450" alt="Leather duffel bag"></div>
+                <div class="body"><span class="cat">Bags</span><h5>Foundry Weekender</h5>
+                  <div class="price-row"><span class="price">₹8,900</span><a href="#shop" class="btn-brass">View</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mt-5">
+            <a href="#shop" class="page-link-leather">‹</a>
+            <a href="#shop" class="page-link-leather active">1</a>
+            <a href="#shop" class="page-link-leather">2</a>
+            <a href="#shop" class="page-link-leather">3</a>
+            <a href="#shop" class="page-link-leather">›</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="about" class="page">
+  <header class="hero">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+          <span class="eyebrow justify-content-center">Our story</span>
+          <h1 class="mt-3" style="font-size:clamp(2.1rem,3.6vw,3rem);">A workshop before it was a website</h1>
+          <p class="hero-lede mx-auto mt-3">Anvil &amp; Oak started in a one-room workshop in Dharmapuri in 2014, with two workbenches and a single roll of vegetable-tanned leather. We've grown since — but the workbenches haven't moved.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section hairline">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/seed/founder5/700/560" class="split-img" alt="Founder Meera Raghunathan at the workbench">
+        </div>
+        <div class="col-lg-6">
+          <span class="eyebrow">How it started</span>
+          <h2 class="mt-3 mb-4" style="font-size:2rem;">From repairing saddles to building a workshop</h2>
+          <p class="hero-lede mb-3" style="max-width:520px;">Meera learned leatherwork repairing saddles for the family farm. When the saddle work slowed down, the skill didn't go anywhere — it turned into bags, then wallets, then a small team of five makers who each sign the pieces they finish.</p>
+          <p class="hero-lede" style="max-width:520px;">Today we still cut every pattern by hand, and every order ships from the same workshop where it was made.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-6">
+          <span class="eyebrow">What we won't compromise on</span>
+          <h2 class="mt-3" style="font-size:2rem;">Three things we hold the line on</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="value-card">
+            <h5>Full-grain only</h5>
+            <p>No bonded or corrected leather, ever — even when it would cut our costs in half.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card">
+            <h5>One maker, one piece</h5>
+            <p>A single craftsperson sees each item from cut to finish, and signs the inside lining.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="value-card">
+            <h5>Repair, not replace</h5>
+            <p>Every Anvil &amp; Oak piece can be sent back to us for restitching or re-conditioning, for life.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hairline" style="background:var(--surface);">
+    <div class="container">
+      <span class="eyebrow">The makers</span>
+      <h2 class="mt-3 mb-5" style="font-size:2rem;">Five hands behind every order</h2>
+      <div class="row g-4">
+        <div class="col-md-3 col-sm-6 team-card">
+          <img src="https://picsum.photos/seed/team1/300/300" alt="Meera Raghunathan">
+          <h6>Meera Raghunathan</h6>
+          <span class="role">Founder &amp; Lead Cutter</span>
+        </div>
+        <div class="col-md-3 col-sm-6 team-card">
+          <img src="https://picsum.photos/seed/team2/300/300" alt="Arul Selvan">
+          <h6>Arul Selvan</h6>
+          <span class="role">Master Stitcher</span>
+        </div>
+        <div class="col-md-3 col-sm-6 team-card">
+          <img src="https://picsum.photos/seed/team3/300/300" alt="Divya Shankar">
+          <h6>Divya Shankar</h6>
+          <span class="role">Woodware Lead</span>
+        </div>
+        <div class="col-md-3 col-sm-6 team-card">
+          <img src="https://picsum.photos/seed/team4/300/300" alt="Karthik Bose">
+          <h6>Karthik Bose</h6>
+          <span class="role">Finishing &amp; Quality</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="eyebrow">Visit us</span>
+          <h2 class="mt-3 mb-3" style="font-size:1.9rem;">Come see the workbenches</h2>
+          <p class="hero-lede mb-2" style="max-width:480px;">We open the workshop floor every Saturday for visitors who want to see how their bag is actually made.</p>
+          <p class="mono-tag" style="color:var(--ink-soft);">12, Mill Road, Dharmapuri, Tamil Nadu — Open Mon–Sat, 10am–6pm</p>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://picsum.photos/seed/storefront6/700/420" class="split-img" alt="Anvil and Oak workshop storefront">
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="login" class="page">
+  <section class="auth-wrap">
+    <div class="container">
+      <div class="row g-0 justify-content-center" style="max-width:1000px; margin:0 auto;">
+
+        <div class="col-lg-6">
+          <div class="auth-side" style="border-radius:3px 0 0 3px;">
+            <span class="eyebrow">Welcome back</span>
+            <h2>Pick up right where your workshop order left off.</h2>
+            <p>Track orders, save your sizing, and get first access to small-batch drops before they reach the shop page.</p>
+            <img src="https://picsum.photos/seed/authleft1/500/420" alt="Leather goods on workbench" style="width:100%; border-radius:3px; margin-top:2rem; opacity:0.92;">
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="auth-card" style="border-radius:0 3px 3px 0; height:100%; display:flex; flex-direction:column; justify-content:center;">
+            <div class="stitch-frame"><span class="rivet-tl"></span><span class="rivet-tr"></span><span class="rivet-bl"></span><span class="rivet-br"></span></div>
+
+            <span class="eyebrow">Sign in</span>
+            <h3 class="mt-3 mb-1" style="font-size:1.7rem;">Welcome back</h3>
+            <p style="color:var(--ink-soft); font-size:0.92rem; margin-bottom:1.8rem;">Enter your details to access your account.</p>
+
+            <form class="auth-form">
+              <label for="email">Email address</label>
+              <input type="email" id="email" class="form-control" placeholder="you@email.com" required>
+
+              <label for="password">Password</label>
+              <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+
+              <div class="d-flex justify-content-between align-items-center mb-3" style="margin-top:-0.5rem;">
+                <label class="filter-check" style="padding:0;"><span><input type="checkbox"> <span style="font-family:var(--font-body); text-transform:none; letter-spacing:normal; font-size:0.88rem; color:var(--ink-soft);">Remember me</span></span></label>
+                <a href="#forgot" class="mono-tag" style="color:var(--brand);">Forgot password?</a>
+              </div>
+
+              <button type="submit" class="btn-leather w-100 justify-content-center">Sign in <span class="arrow">→</span></button>
+            </form>
+
+            <div class="auth-divider">or</div>
+
+            <p class="text-center" style="font-size:0.92rem; color:var(--ink-soft);">
+              Don't have an account? <a href="#register" style="color:var(--brand); font-weight:600;">Create one</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="register" class="page">
+  <section class="auth-wrap">
+    <div class="container">
+      <div class="row g-0 justify-content-center" style="max-width:1000px; margin:0 auto;">
+
+        <div class="col-lg-6 order-lg-2">
+          <div class="auth-side" style="border-radius:0 3px 3px 0;">
+            <span class="eyebrow">Join the workshop list</span>
+            <h2>Members see new batches before the shop page does.</h2>
+            <p>Create an account to track orders, save shipping details, and get first access to limited runs — usually 24 hours before everyone else.</p>
+            <img src="https://picsum.photos/seed/authright2/500/420" alt="Workshop tools laid out on a bench" style="width:100%; border-radius:3px; margin-top:2rem; opacity:0.92;">
+          </div>
+        </div>
+
+        <div class="col-lg-6 order-lg-1">
+          <div class="auth-card" style="border-radius:3px 0 0 3px; height:100%; display:flex; flex-direction:column; justify-content:center;">
+            <div class="stitch-frame"><span class="rivet-tl"></span><span class="rivet-tr"></span><span class="rivet-bl"></span><span class="rivet-br"></span></div>
+
+            <span class="eyebrow">Create account</span>
+            <h3 class="mt-3 mb-1" style="font-size:1.7rem;">Join Anvil &amp; Oak</h3>
+            <p style="color:var(--ink-soft); font-size:0.92rem; margin-bottom:1.8rem;">It takes less than a minute.</p>
+
+            <form class="auth-form">
+              <div class="row">
+                <div class="col-6">
+                  <label for="fname">First name</label>
+                  <input type="text" id="fname" class="form-control" placeholder="Asha" required>
+                </div>
+                <div class="col-6">
+                  <label for="lname">Last name</label>
+                  <input type="text" id="lname" class="form-control" placeholder="Verma" required>
+                </div>
+              </div>
+
+              <label for="remail">Email address</label>
+              <input type="email" id="remail" class="form-control" placeholder="you@email.com" required>
+
+              <label for="rpassword">Password</label>
+              <input type="password" id="rpassword" class="form-control" placeholder="At least 8 characters" required>
+
+              <label for="rpassword2">Confirm password</label>
+              <input type="password" id="rpassword2" class="form-control" placeholder="Re-enter password" required>
+
+              <label class="filter-check mb-3" style="padding:0;">
+                <span><input type="checkbox" required> <span style="font-family:var(--font-body); text-transform:none; letter-spacing:normal; font-size:0.86rem; color:var(--ink-soft);">I agree to the Terms and Privacy Policy</span></span>
+              </label>
+
+              <button type="submit" class="btn-leather w-100 justify-content-center">Create account <span class="arrow">→</span></button>
+            </form>
+
+            <div class="auth-divider">or</div>
+
+            <p class="text-center" style="font-size:0.92rem; color:var(--ink-soft);">
+              Already have an account? <a href="#login" style="color:var(--brand); font-weight:600;">Sign in</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="forgot" class="page">
+  <section class="auth-wrap">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="auth-card">
+            <div class="stitch-frame"><span class="rivet-tl"></span><span class="rivet-tr"></span><span class="rivet-bl"></span><span class="rivet-br"></span></div>
+
+            <span class="eyebrow">Account recovery</span>
+            <h3 class="mt-3 mb-1" style="font-size:1.6rem;">Reset your password</h3>
+            <p style="color:var(--ink-soft); font-size:0.92rem; margin-bottom:1.8rem;">Enter the email tied to your account and we'll send a link to reset your password.</p>
+
+            <form class="auth-form">
+              <label for="femail">Email address</label>
+              <input type="email" id="femail" class="form-control" placeholder="you@email.com" required>
+
+              <button type="submit" class="btn-leather w-100 justify-content-center mt-1">Send reset link <span class="arrow">→</span></button>
+            </form>
+
+            <div class="auth-divider">or</div>
+
+            <p class="text-center" style="font-size:0.92rem; color:var(--ink-soft);">
+              Remembered it after all? <a href="#login" style="color:var(--brand); font-weight:600;">Back to sign in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section id="home" class="page">
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="eyebrow">Est. 2014 · Workshop</span>
+          <h1 class="mt-3 mb-4">Built by hand.<br><em>Built to last.</em></h1>
+          <p class="hero-lede mb-4">Every bag, wallet and woodware piece we sell is cut, stitched and finished in our own workshop — no factory lines, no shortcuts. Just full-grain leather, seasoned oak, and people who care about the eighth stitch as much as the first.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#shop" class="btn-leather">Shop the collection <span class="arrow">→</span></a>
+            <a href="#about" class="btn-ghost">Our story</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-visual">
+            <img src="https://picsum.photos/seed/anvilhero/800/640" alt="Hand-stitched leather satchel resting on a workbench">
+            <div class="hero-stat-card">
+              <div class="num">11 yrs</div>
+              <div class="label">In the workshop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hairline">
+    <div class="container">
+      <div class="row g-0 text-center text-md-start py-2">
+        <div class="col-md-3 process-step">
+          <span class="process-num">01</span>
+          <h4>Sourced</h4>
+          <p>Full-grain hides from small tanneries, oak from managed forests.</p>
+        </div>
+        <div class="col-md-3 process-step">
+          <span class="process-num">02</span>
+          <h4>Cut</h4>
+          <p>Hand-marked patterns, every panel cut to the grain.</p>
+        </div>
+        <div class="col-md-3 process-step">
+          <span class="process-num">03</span>
+          <h4>Stitched</h4>
+          <p>Saddle-stitched by needle, two threads pulling against each other.</p>
+        </div>
+        <div class="col-md-3 process-step">
+          <span class="process-num">04</span>
+          <h4>Finished</h4>
+          <p>Edges burnished by hand, conditioned, and inspected piece by piece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row align-items-end mb-5">
+        <div class="col-md-8">
+          <span class="eyebrow">Featured</span>
+          <h2 class="mt-2" style="font-size:2.1rem;">This season's collection</h2>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#shop" class="btn-ghost">View all products</a>
+        </div>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="thumb">
+              <span class="badge-new">New</span>
+              <img src="https://picsum.photos/seed/satchel1/600/450" alt="Tan full-grain leather satchel">
+            </div>
+            <div class="body">
+              <span class="cat">Bags</span>
+              <h5>The Foundry Satchel</h5>
+              <div class="price-row">
+                <span class="price">₹6,450</span>
+                <a href="#shop" class="btn-brass">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/wallet2/600/450" alt="Hand-stitched bifold wallet">
+            </div>
+            <div class="body">
+              <span class="cat">Wallets</span>
+              <h5>Kestrel Bifold</h5>
+              <div class="price-row">
+                <span class="price">₹1,890</span>
+                <a href="#shop" class="btn-brass">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="product-card">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/board3/600/450" alt="Oak end-grain chopping board">
+            </div>
+            <div class="body">
+              <span class="cat">Woodware</span>
+              <h5>End-Grain Oak Board</h5>
+              <div class="price-row">
+                <span class="price">₹3,200</span>
+                <a href="#shop" class="btn-brass">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section hairline" style="background:var(--surface);">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2 position-relative">
+          <img src="https://picsum.photos/seed/workshop4/700/560" class="split-img" alt="Craftsman stitching leather at a workbench">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <span class="eyebrow">Why handmade</span>
+          <h2 class="mt-3 mb-4" style="font-size:2rem;">Machines are fast. Hands notice things.</h2>
+          <p class="hero-lede mb-4" style="max-width:520px;">A stitching machine doesn't feel a thin spot in the hide before it tears the thread. Our makers do. That's the difference between a bag that lasts a season and one that gets handed down. We make slower, on purpose.</p>
+          <div class="quote-block mb-3">"We don't chase volume. We chase the eighth stitch being as tight as the first."</div>
+          <p class="mono-tag" style="color:var(--ink-soft);">— Meera Raghunathan, Founder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7">
+          <span class="eyebrow justify-content-center">Stay in the loop</span>
+          <h2 class="mt-3 mb-3" style="font-size:1.9rem;">New drops, restocks, and workshop notes.</h2>
+          <p class="hero-lede mx-auto mb-4">No spam — just an occasional note when a new batch is ready, with the small details behind how it was made.</p>
+          <form class="d-flex justify-content-center flex-wrap gap-0" style="max-width:420px;margin:0 auto;">
+            <input type="email" class="form-control" placeholder="you@email.com" style="border-radius:3px 0 0 3px; border-color:var(--line); max-width:260px;" required>
+            <button class="btn-leather" style="border-radius:0 3px 3px 0;" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="brand-mark mb-3" style="color:#fff;"><span class="dot"></span>Anvil &amp; Oak</div>
+        <p style="color:#C7B79A; font-size:0.92rem; max-width:280px;">Handcrafted leather and woodcraft goods, made in our Dharmapuri workshop since 2014.</p>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Shop</h6>
+        <ul class="list-unstyled" style="font-size:0.92rem; line-height:2.1;">
+          <li><a href="#shop">Bags</a></li>
+          <li><a href="#shop">Wallets</a></li>
+          <li><a href="#shop">Belts</a></li>
+          <li><a href="#shop">Woodware</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Company</h6>
+        <ul class="list-unstyled" style="font-size:0.92rem; line-height:2.1;">
+          <li><a href="#about">About</a></li>
+          <li><a href="#about">Workshop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Account</h6>
+        <ul class="list-unstyled" style="font-size:0.92rem; line-height:2.1;">
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#forgot">Forgot password</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6>Follow</h6>
+        <ul class="list-unstyled" style="font-size:0.92rem; line-height:2.1;">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between">
+      <span>© 2026 BUVANRAJ . All rights reserved.</span>
+    
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
